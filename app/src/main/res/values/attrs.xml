@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomButtonView">
+        <attr name="nameText" format="string"/>
+        <attr name="imageResourcePressed" format="reference|integer"/>
+        <attr name="imageResourceSelectable" format="reference|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundButtonView">
+        <attr name="RoundButtonNameText" format="string"/>
+        <attr name="RoundButtonImageResourceSelectable" format="reference|integer"/>
+    </declare-styleable>
+</resources>

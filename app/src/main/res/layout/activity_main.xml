@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="content2"
+            type="com.example.administrator.databindingadvanceddemo.bean.Content2"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorTitleBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@{content2.name}"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="22sp"/>
+
+                <ImageView
+                    android:id="@+id/searchImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignRight="@+id/otherImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:src="@drawable/title_bar_search"/>
+
+                <ImageView
+                    android:id="@+id/otherImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/title_bar_other"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorBottomBar"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp">
+
+                <com.example.administrator.databindingadvanceddemo.component.BottomButtonView
+                    android:id="@+id/homeBottomButtonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:imageResourcePressed="@drawable/home_pressed"
+                    app:imageResourceSelectable="@drawable/home_selectable"
+                    app:nameText="首頁"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp">
+
+                <com.example.administrator.databindingadvanceddemo.component.BottomButtonView
+                    android:id="@+id/favoriteBottomButtonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:imageResourcePressed="@drawable/favorite_pressed"
+                    app:imageResourceSelectable="@drawable/favorite_selectable"
+                    app:nameText="最愛"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp">
+
+                <com.example.administrator.databindingadvanceddemo.component.BottomButtonView
+                    android:id="@+id/memberBottomButtonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:imageResourcePressed="@drawable/member_pressed"
+                    app:imageResourceSelectable="@drawable/member_selectable"
+                    app:nameText="會員"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp">
+
+                <com.example.administrator.databindingadvanceddemo.component.BottomButtonView
+                    android:id="@+id/moreBottomButtonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:imageResourcePressed="@drawable/more_pressed"
+                    app:imageResourceSelectable="@drawable/more_selectable"
+                    app:nameText="更多"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@drawable/advertising"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="#50000000"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorRoundButton"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/nearbyRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/nearby_cuisine"
+                            app:RoundButtonNameText="附近美食"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/recommendedRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/recommended_to_eat"
+                            app:RoundButtonNameText="推薦必吃"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/latestRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/latest_food_record"
+                            app:RoundButtonNameText="最新食記"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorRoundButton"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/nightRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/night_market_information"
+                            app:RoundButtonNameText="夜市資訊"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/discountRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/discount_meal_roll"
+                            app:RoundButtonNameText="優惠餐旅卷"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.administrator.databindingadvanceddemo.component.RoundButtonView
+                            android:id="@+id/iRoundButtonView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:RoundButtonImageResourceSelectable="@drawable/i_recommend"
+                            app:RoundButtonNameText="我來推薦"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/colorSeparationline"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

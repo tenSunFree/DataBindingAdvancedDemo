@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTitleBar">#FF8000</color>
+    <color name="colorBottomBar">#353535</color>
+    <color name="colorTitleText">#FFFFFF</color>
+    <color name="colorBottomText">#999999</color>
+
+    <color name="colorRoundButton">#FFFFFF</color>
+    <color name="colorRoundButtonText">#333333</color>
+
+    <color name="colorSeparationline">#F0F0F0</color>
+
+    <color name="colorRecyclerViewTitleText">#FF8000</color>
+    <color name="colorRecyclerViewContentText">#333333</color>
+    <color name="colorRecyclerViewContentText2">#999999</color>
+</resources>

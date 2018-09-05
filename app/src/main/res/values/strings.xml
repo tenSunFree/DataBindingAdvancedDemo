@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DataBindingAdvancedDemo</string>
+    <string name="titleBarAppName">食在方便</string>
+    <string name="bottomBarHome">首頁</string>
+    <string name="bottomBarFavorite">最愛</string>
+    <string name="bottomBarMember">會員</string>
+    <string name="bottomBarMore">更多</string>
+    <string name="roundButtonNearby">附近美食</string>
+    <string name="roundButtonRecommended">推薦必吃</string>
+    <string name="roundButtonLatest">最新食記</string>
+    <string name="roundButtonNight">夜市資訊</string>
+    <string name="roundButtonDiscount">優惠餐旅卷</string>
+    <string name="roundButtonI">我來推薦</string>
+    <string name="recyclerViewTitle">附近評價最高</string>
+    <string name="recyclerViewLast">更多</string>
+</resources>
