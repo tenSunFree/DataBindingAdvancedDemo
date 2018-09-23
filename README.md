@@ -20,5 +20,4 @@ https://play.google.com/store/apps/details?id=com.orangefish.app.delicacy
 
 備註
 --------
-僅供學習交流之用, 請勿用於商業用途, 如有侵權請聯繫刪除, 謝謝
-
+圖片資源僅供學習交流之用, 請勿用於商業用途, 如有侵權請聯繫刪除, 謝謝
