@@ -18,3 +18,7 @@ https://play.google.com/store/apps/details?id=com.orangefish.app.delicacy
   <img src="https://i.imgur.com/zPAwzur.png" width="260"/>
 </p> 
 
+備註
+--------
+僅供學習交流之用, 請勿用於商業用途, 如有侵權請聯繫刪除, 謝謝
+
